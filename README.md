@@ -6,6 +6,7 @@ $ sudo ./lifebox
 usage: ./lifebox <options> 
 Options:
         -L                        : Large display, in which each chain is 'folded down'
+        -m <milliseconds>         : Lifebox speed. Default: 15.
         -c <chained>              : Daisy-chained boards. Default: 1.
         -P <parallel>             : Parallel. Default: 1.
         -p <pwm-bits>             : Bits used for PWM. Something between 1..11. Default: 11.
@@ -42,11 +43,9 @@ Options:
         --led-daemon              : Make the process run in the background as daemon.
         --led-no-drop-privs       : Don't drop privileges from 'root' after initializing the hardware.
 
-Example:
+Examples:
+        ./lifebox -V201,80,76 -X240,230,165 -Y222,199,75 -W10,172,130 -Z0,0,0 
         ./lifebox -t 10
-Runs for 10 seconds
+        ./lifebox 
 ```
-
-
-Here is a video of how it looks
 [![lifebox](http://img.youtube.com/vi/Qz2rlycWZhk/0.jpg)](http://www.youtube.com/watch?v=Qz2rlycWZhk)
