@@ -49,4 +49,4 @@ Runs for 10 seconds
 
 
 Here is a video of how it looks
-[![Runtext][run-vid]](http://youtu.be/Qz2rlycWZhk)
+[![lifebox](http://img.youtube.com/vi/Qz2rlycWZhk/0.jpg)](http://www.youtube.com/watch?v=Qz2rlycWZhk)
