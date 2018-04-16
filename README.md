@@ -5,16 +5,8 @@ $ make
 $ sudo ./lifebox
 usage: ./lifebox <options> 
 Options:
-        -L                        : Large display, in which each chain is 'folded down'
-        -m <milliseconds>         : Lifebox speed. Default: 15.
-        -c <chained>              : Daisy-chained boards. Default: 1.
-        -P <parallel>             : Parallel. Default: 1.
-        -p <pwm-bits>             : Bits used for PWM. Something between 1..11. Default: 11.
-        -b <brightness>           : Brightness in percent. Default: 100.
-        -r <rows>                 : Display rows. 16 for 16x32, 32 for 32x32. Default: 32
-                                    in the middle in an U-arrangement to get more vertical space.
-        -R <rotation>             : Sets the rotation of matrix. Allowed: 0, 90, 180, 270. Default: 0.
         -t <seconds>              : Run for these number of seconds, then exit.
+        -m <milliseconds>         : Lifebox speed. Default 15.
         -V <r,g,b>        : Species-Comp-Color. Default 255,0,255
         -W <r,g,b>        : Plantes-Color. Default 255,255,255
         -X <r,g,b>        : Species1-Color, Default 255,255,0

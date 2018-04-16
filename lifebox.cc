@@ -568,23 +568,14 @@ static int usage(const char *progname) {
     fprintf(stderr, "usage: %s <options> [optional parameter]\n", progname);
     fprintf(stderr, "Options:\n");
     fprintf(stderr,
-            "\t-L                        : Large display, in which each chain is 'folded down'\n"
-            "\t-c <chained>              : Daisy-chained boards. Default: 1.\n"
-            "\t-P <parallel>             : Parallel. Default: 1.\n"
-            "\t-p <pwm-bits>             : Bits used for PWM. Something between 1..11. Default: 11.\n"
-            "\t-b <brightness>           : Brightness in percent. Default: 100.\n"
-            "\t-r <rows>                 : Display rows. 16 for 16x32, 32 for 32x32. Default: 32\n"
-            "\t                            in the middle in an U-arrangement to get more vertical space.\n"
-            "\t-R <rotation>             : Sets the rotation of matrix. Allowed: 0, 90, 180, 270. Default: 0.\n"
-            "\t-t <seconds>              : Run for these number of seconds, then exit.\n"
+            "\t-t <seconds>      : Run for these number of seconds, then exit.\n"
+            "\t-m <milliseconds> : Lifebox speed. Default 15.\n"
             "\t-V <r,g,b>        : Species-Comp-Color. Default 255,0,255\n"
             "\t-W <r,g,b>        : Plantes-Color. Default 255,255,255\n"
             "\t-X <r,g,b>        : Species1-Color, Default 255,255,0\n"
             "\t-Y <r,g,b>        : Species2-Color. Default 0,255,255\n"
             "\t-Z <r,g,b>        : Nothing-Color. Default 0,0,0\n");
-
     PrintMatrixFlags(stderr);
-
     return 1;
 }
 
@@ -614,44 +605,13 @@ int main(int argc, char *argv[]) {
     }
 
     int opt;
-    while ((opt = getopt(argc, argv, "dt:r:P:c:p:b:m:LR:V:W:X:Y:Z:")) != -1) {
+    while ((opt = getopt(argc, argv, "t:m:V:W:X:Y:Z:")) != -1) {
         switch (opt) {
             case 't':
                 runtime_seconds = atoi(optarg);
                 break;
             case 'm':
                 scroll_ms = atoi(optarg);
-                break;
-            case 'R':
-                fprintf(stderr, "-R is deprecated. "
-                        "Use --led-pixel-mapper=\"Rotate:%s\" instead.\n", optarg);
-                return 1;
-                break;
-            case 'L':
-                fprintf(stderr, "-L is deprecated. Use\n\t--led-pixel-mapper=\"U-mapper\" --led-chain=4\ninstead.\n");
-                return 1;
-                break;
-                // These used to be options we understood, but deprecated now. Accept
-                // but don't mention in usage()
-            case 'd':
-                runtime_opt.daemon = 1;
-                break;
-            case 'r':
-                fprintf(stderr, "Instead of deprecated -r, use --led-rows=%s instead.\n", optarg);
-                matrix_options.rows = atoi(optarg);
-                break;
-            case 'P':
-                matrix_options.parallel = atoi(optarg);
-                break;
-            case 'c':
-                fprintf(stderr, "Instead of deprecated -c, use --led-chain=%s instead.\n", optarg);
-                matrix_options.chain_length = atoi(optarg);
-                break;
-            case 'p':
-                matrix_options.pwm_bits = atoi(optarg);
-                break;
-            case 'b':
-                matrix_options.brightness = atoi(optarg);
                 break;
             case 'V':
                 color_species_comp = new Color(0, 0, 0);
