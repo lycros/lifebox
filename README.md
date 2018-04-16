@@ -46,4 +46,11 @@ Examples:
 | ![lifebox](https://i.imgur.com/MsjFOf8.jpg) | [![lifebox](https://img.youtube.com/vi/Qz2rlycWZhk/0.jpg)](https://www.youtube.com/watch?v=Qz2rlycWZhk) |
 
 
- 
+Hardware:
+- Raspberry Pi 2 Model B v1.1
+- RGB LED Panel 32x32 COM-12584
+- Power supply MeanWell, RS-15-5
+- [SHUTDOWN CIRCUIT (USE YOUR OWN SWITCH)](https://mausberry-circuits.myshopify.com/products/shutdown-circuit-use-your-own-switch)
+- [Adapter PCB OSH Park](https://github.com/hzeller/rpi-rgb-led-matrix/tree/master/adapter/passive-rpi1)
+- [Physical custom switch](https://www.conrad.de/de/wippschalter-250-vac-6-a-1-x-ausein-r13-112a-02-bb-onoff-rastend-1-st-700339.html)
+
