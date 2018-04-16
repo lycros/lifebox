@@ -49,4 +49,9 @@ Examples:
         ./lifebox 
 ```
 
-![lifebox](https://i.imgur.com/MsjFOf8.jpg) [![lifebox](https://img.youtube.com/vi/Qz2rlycWZhk/0.jpg)](https://www.youtube.com/watch?v=Qz2rlycWZhk)
+| Image | Video |
+| --- | --- |
+| ![lifebox](https://i.imgur.com/MsjFOf8.jpg) | [![lifebox](https://img.youtube.com/vi/Qz2rlycWZhk/0.jpg)](https://www.youtube.com/watch?v=Qz2rlycWZhk) |
+
+
+ 
