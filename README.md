@@ -43,7 +43,7 @@ Examples:
 
 | Image | Video |
 | --- | --- |
-| <img src="https://i.imgur.com/MsjFOf8.jpg" alt="lifebox" height="360" /> | [![lifebox](https://img.youtube.com/vi/Qz2rlycWZhk/0.jpg)](https://www.youtube.com/watch?v=Qz2rlycWZhk) |
+| <img src="https://i.imgur.com/MsjFOf8.jpg" alt="lifebox" /> | [![lifebox](https://img.youtube.com/vi/Qz2rlycWZhk/0.jpg)](https://www.youtube.com/watch?v=Qz2rlycWZhk) |
 
 
 Hardware:
