@@ -42,11 +42,10 @@ Examples:
         ./lifebox -t 10
         ./lifebox 
 ```
-<div style="background:black">
+
 <p align="center">
 <img src="https://i.imgur.com/MsjFOf8.jpg" alt="lifebox" /> 
 </p>
-</div>
 
 
 Hardware:
