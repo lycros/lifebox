@@ -7,17 +7,19 @@ usage: ./lifebox <options>
 Options:
         -t <seconds>              : Run for these number of seconds, then exit.
         -m <milliseconds>         : Lifebox speed. Default 15.
-        -V <r,g,b>        : Species-Comp-Color. Default 255,0,255
-        -W <r,g,b>        : Plantes-Color. Default 255,255,255
-        -X <r,g,b>        : Species1-Color, Default 255,255,0
-        -Y <r,g,b>        : Species2-Color. Default 0,255,255
-        -Z <r,g,b>        : Nothing-Color. Default 0,0,0
+        -V <r,g,b>                : Species-Comp-Color. Default 255,0,255
+        -W <r,g,b>                : Plantes-Color. Default 255,255,255
+        -X <r,g,b>                : Species1-Color, Default 255,255,0
+        -Y <r,g,b>                : Species2-Color. Default 0,255,255
+        -Z <r,g,b>                : Nothing-Color. Default 0,0,0
+        
         --led-gpio-mapping=<name> : Name of GPIO mapping used. Default "regular"
         --led-rows=<rows>         : Panel rows. Typically 8, 16, 32 or 64. (Default: 32).
         --led-cols=<cols>         : Panel columns. Typically 32 or 64. (Default: 32).
         --led-chain=<chained>     : Number of daisy-chained panels. (Default: 1).
         --led-parallel=<parallel> : Parallel chains. range=1..3 (Default: 1).
-        --led-multiplexing=<0..6> : Mux type: 0=direct; 1=Stripe; 2=Checkered; 3=Spiral; 4=ZStripe; 5=ZnMirrorZStripe; 6=coreman (Default: 0)
+        --led-multiplexing=<0..6> : Mux type: 0=direct; 1=Stripe; 2=Checkered; 3=Spiral; 4=ZStripe; 5=ZnMirrorZStripe; 
+                                    6=coreman (Default: 0)
         --led-pixel-mapper        : Semicolon-separated list of pixel-mappers to arrange pixels.
                                     Optional params after a colon e.g. "U-mapper;Rotate:90"
                                     Available: "Rotate", "U-mapper". Default: ""
