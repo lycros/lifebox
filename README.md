@@ -42,10 +42,9 @@ Examples:
         ./lifebox -t 10
         ./lifebox 
 ```
-
-| Image | Video |
-| --- | --- |
-| <img src="https://i.imgur.com/MsjFOf8.jpg" alt="lifebox" /> | [![lifebox](https://img.youtube.com/vi/Qz2rlycWZhk/0.jpg)](https://www.youtube.com/watch?v=Qz2rlycWZhk) |
+<p align="center">
+<img src="https://i.imgur.com/MsjFOf8.jpg" alt="lifebox" /> 
+</p>
 
 
 Hardware:
