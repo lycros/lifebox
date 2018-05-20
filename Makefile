@@ -1,4 +1,5 @@
-CXXFLAGS=-Wall -O3 -g -Wextra -Wno-unused-parameter
+CFLAGS=-Wall -O3 -g -Wextra -Wno-unused-parameter
+CXXFLAGS=$(CFLAGS)
 OBJECTS=lifebox.o
 BINARIES=lifebox
 
