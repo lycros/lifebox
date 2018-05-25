@@ -9,5 +9,6 @@ wget https://github.com/lycros/lifebox/raw/master/Makefile
 echo "Moving Files"
 mv lifebox.cc rpi-rgb-led-matrix/lifebox/
 mv Makefile rpi-rgb-led-matrix/lifebox/
+cd rpi-rgb-led-matrix/lifebox/
 make
 echo "End Script"
